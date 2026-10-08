@@ -7,3 +7,4 @@ dist/
 build/
 .DS_Store
 docker-compose.local.yml
+docker-compose.dev.yml

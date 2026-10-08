@@ -59,7 +59,7 @@ export function LoginPage() {
           </p>
 
           <p>
-            Роль: <b>{user.role}</b>
+            Роляша: <b>{user.role}</b>
           </p>
 
           <button onClick={handleLogout}>Выйти</button>

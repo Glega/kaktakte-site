@@ -1,0 +1,22 @@
+{
+  "name": "kaktakte-site",
+  "private": true,
+  "scripts": {
+    "dev": "docker compose  -f docker-compose.dev.yml up -d --build",
+    "dev:down": "docker compose  -f docker-compose.dev.yml down",
+    "dev:clean": "docker compose  -f docker-compose.dev.yml down -v",
+    "dev:logs": "docker compose  -f docker-compose.dev.yml logs -f",
+    "dev:frontend": "docker compose  -f docker-compose.dev.yml logs -f frontend",
+    "dev:backend": "docker compose  -f docker-compose.dev.yml logs -f backend",
+    "dev:restart": "docker compose  -f docker-compose.dev.yml restart",
+
+    "local": "docker compose  -f docker-compose.local.yml up -d --build",
+    "local:down": "docker compose  -f docker-compose.local.yml down",
+    "local:clean": "docker compose  -f docker-compose.local.yml down -v",
+    "local:logs": "docker compose  -f docker-compose.local.yml logs -f",
+    "local:restart": "docker compose  -f docker-compose.local.yml restart",
+
+    "backend": "docker compose  -f docker-compose.dev.yml up -d db backend",
+    "frontend": "cd frontend && npm run dev"
+  }
+}
